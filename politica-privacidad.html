@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidad — AutoGasto</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+         max-width: 720px; margin: 0 auto; padding: 24px 20px 64px;
+         line-height: 1.6; }
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.15rem; margin-top: 2em; }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { border: 1px solid #8884; padding: 8px 10px; text-align: left; }
+  .updated { color: #888; font-size: .9rem; }
+  .pill { background: #2e7d3222; border: 1px solid #2e7d3266; border-radius: 8px;
+          padding: 12px 16px; margin: 16px 0; }
+</style>
+</head>
+<body>
+<h1>Política de Privacidad — AutoGasto</h1>
+<p class="updated">Última actualización: 11 de junio de 2026</p>
+
+<p>AutoGasto («la app», «nosotros») es una aplicación de bienestar financiero que
+registra tus gastos e ingresos de forma automática leyendo las notificaciones de
+tus apps bancarias, <strong>procesándolas exclusivamente en tu dispositivo</strong>.</p>
+
+<div class="pill"><strong>La premisa es simple: ningún dato tuyo sale de tu teléfono.</strong>
+AutoGasto no declara el permiso de Internet, no tiene servidores y no requiere cuentas.</div>
+
+<h2>1. Datos a los que accede la app</h2>
+<ul>
+  <li><strong>Texto de notificaciones bancarias.</strong> Con tu permiso explícito
+  (acceso a notificaciones de Android), la app lee únicamente las notificaciones de
+  las apps bancarias que tú actives dentro de AutoGasto (lista blanca). Las
+  notificaciones de cualquier otra app se ignoran y no se almacenan.</li>
+  <li><strong>Datos derivados.</strong> Del texto de la notificación se extraen
+  localmente el monto, el comercio, el tipo de movimiento y el banco, y se asigna
+  una categoría. Eso es lo que se guarda.</li>
+  <li><strong>Datos que tú capturas.</strong> Presupuestos por categoría,
+  correcciones manuales de categoría, movimientos en efectivo que registres
+  a mano (monto, descripción y categoría), y tus pagos próximos y metas de
+  ahorro (nombre, monto, fecha y abonos).</li>
+</ul>
+<p>La app <strong>no</strong> accede a: SMS, contactos, ubicación, cámara, micrófono,
+archivos, credenciales bancarias, ni APIs de Open Banking. No existe registro de
+usuario ni cuentas.</p>
+
+<h2>2. Dónde se guardan y procesan los datos</h2>
+<p>Todo el procesamiento (lectura, análisis con expresiones regulares y
+categorización) ocurre <strong>en tu dispositivo</strong>. Los datos se almacenan en
+una base de datos local (Room/SQLite) dentro del almacenamiento privado de la app.</p>
+<p><strong>AutoGasto no declara el permiso de Internet en su manifiesto Android</strong>,
+por lo que es técnicamente imposible que la app transmita información a servidores
+propios o de terceros. Esto es verificable por cualquier persona inspeccionando el
+paquete de la app.</p>
+
+<h2>3. Datos que se recopilan o comparten</h2>
+<p><strong>Ninguno.</strong> No recopilamos, transmitimos, vendemos ni compartimos
+datos personales o financieros. No usamos servicios de analítica, publicidad,
+rastreo ni informes de fallos de terceros.</p>
+
+<h2>4. Exportación de datos (controlada por ti)</h2>
+<p>Puedes exportar tus movimientos a un archivo CSV mediante el selector de archivos
+del sistema. Ese archivo se guarda donde tú elijas y queda bajo tu control y
+responsabilidad exclusivos.</p>
+
+<h2>5. Retención y eliminación</h2>
+<p>Los datos existen solamente mientras la app esté instalada:</p>
+<ul>
+  <li><strong>Borrar movimientos/presupuestos:</strong> desde la propia app.</li>
+  <li><strong>Borrar todo:</strong> Ajustes de Android → Apps → AutoGasto →
+  «Borrar datos», o simplemente desinstala la app. No queda copia en ningún servidor
+  porque nunca existió.</li>
+</ul>
+
+<h2>6. Permisos que solicita la app y para qué</h2>
+<table>
+  <tr><th>Permiso</th><th>Uso</th></tr>
+  <tr>
+    <td>Acceso a notificaciones (<code>NotificationListenerService</code>)</td>
+    <td>Leer las notificaciones de los bancos que actives para detectar movimientos.
+    Es la función principal de la app.</td>
+  </tr>
+  <tr>
+    <td>Notificaciones (<code>POST_NOTIFICATIONS</code>)</td>
+    <td>Avisarte localmente cuando excedes un presupuesto.</td>
+  </tr>
+</table>
+<p>Ambos permisos son revocables en cualquier momento desde los ajustes de Android;
+la app sigue funcionando con los datos ya registrados.</p>
+
+<h2>7. Menores de edad</h2>
+<p>AutoGasto está dirigida a mayores de 18 años. No recopilamos datos de nadie,
+incluidos menores.</p>
+
+<h2>8. Seguridad</h2>
+<p>Los datos residen en el almacenamiento privado de la app, protegido por el
+aislamiento (sandbox) de Android: otras apps no pueden leerlos en un dispositivo no
+modificado (sin root). Recomendamos proteger el teléfono con bloqueo de pantalla.</p>
+
+<h2>9. Cambios a esta política</h2>
+<p>Si la política cambia (por ejemplo, si en el futuro se agregara una función
+opcional de respaldo), publicaremos la nueva versión en esta misma URL y
+actualizaremos la fecha. Cualquier cambio que implicara transmitir datos fuera del
+dispositivo se anunciaría de forma prominente dentro de la app y requeriría tu
+consentimiento explícito.</p>
+
+<h2>10. Aviso conforme a la LFPDPPP (México)</h2>
+<p>Para efectos de la Ley Federal de Protección de Datos Personales en Posesión de
+los Particulares: AutoGasto no recaba ni trata datos personales en servidores del
+responsable; el tratamiento ocurre íntegramente en el dispositivo del titular y bajo
+su control. Los derechos ARCO (acceso, rectificación, cancelación y oposición) se
+ejercen directamente en la app y en los ajustes del sistema, según se describe en
+las secciones 4 y 5.</p>
+
+<h2>11. Contacto</h2>
+<p>Dudas o solicitudes sobre privacidad: <strong><a href="mailto:carlos.al.pa.her@gmail.com">carlos.al.pa.her@gmail.com</a></strong></p>
+</body>
+</html>
