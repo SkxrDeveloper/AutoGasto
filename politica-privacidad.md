@@ -101,4 +101,4 @@ los ajustes del sistema, según se describe en las secciones 4 y 5.
 
 ## 11. Contacto
 
-Dudas o solicitudes sobre privacidad: **carlos.al.pa.her@gmail.com**
+Dudas o solicitudes sobre privacidad: **soporte.autogasto@gmail.com**
